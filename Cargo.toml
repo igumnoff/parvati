@@ -1,23 +1,7 @@
-[package]
-name = "parvati"
-version = "0.0.1"
-edition = "2021"
+[workspace]
+members = [
+    "lib",
+    "test",
+    "orm_derive",
+]
 
-authors = ["Evgeny Igumnov <igumnovnsk@gmail.com>"]
-repository = "https://github.com/igumnoff/parvati"
-documentation = "https://docs.rs/parvati"
-license-file = "LICENSE"
-keywords = []
-categories = []
-readme = "README.md"
-description = "Parvati library"
-
-
-
-
-[dependencies]
-anyhow = "1.0.75"
-thiserror = "1.0.44"
-
-[dev-dependencies]
-env_logger = "0.10.0"

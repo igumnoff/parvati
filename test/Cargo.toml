@@ -1,0 +1,21 @@
+[package]
+name = "test"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+
+[dependencies]
+parvati = {path = "../lib", features = ["sqlite", "mysql"]}
+parvati_derive = {path = "../parvati_derive"}
+futures = "0.3.26"
+
+env_logger = "0.10.0"
+log = "0.4.17"
+
+tokio = { version = "1.25.0", features = ["full"] }
+async-trait = "0.1.73"
+thiserror = "1.0.44"
+[dev-dependencies]
+serde_derive = "1.0"
+serde = "1.0"

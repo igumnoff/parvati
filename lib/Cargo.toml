@@ -1,0 +1,38 @@
+[package]
+name = "parvati"
+version = "1.0.0"
+edition = "2021"
+
+authors = ["Evgeny Igumnov <igumnovnsk@gmail.com>"]
+repository = "https://github.com/igumnoff/parvati"
+documentation = "https://docs.rs/parvati"
+license-file = "../LICENSE"
+keywords = ["orm", "sql", "database", "sqlite", "mysql"]
+categories = ["database"]
+readme = "../README.md"
+description = "Parvati: Indeed, an ORM library, not a framework, written in Rust"
+
+
+
+[package.metadata.docs.rs]
+features = ["sqlite", "mysql"]
+
+
+
+[dependencies]
+futures = "0.3.26"
+async-trait = "0.1.73"
+log = "0.4.17"
+thiserror = "1.0.47"
+tokio = { version = "1.25.0", features = ["full"] }
+serde = "1.0"
+anyhow = "1.0.75"
+rusqlite = { version = "0.29.0", features = ["bundled"], optional = true }
+mysql_async = { version = "0.32.2", default-features = false, features = ["default-rustls"], optional = true }
+
+[dev-dependencies]
+serde_derive = "1.0"
+
+[features]
+sqlite = ["rusqlite"]
+mysql = ["mysql_async"]
