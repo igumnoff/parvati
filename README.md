@@ -1,1 +1,3 @@
-# parvati
+# Parvati
+
+![Parvati](logo.png)
