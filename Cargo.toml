@@ -2,6 +2,6 @@
 members = [
     "lib",
     "test",
-    "orm_derive",
+    "parvati_derive",
 ]
 
