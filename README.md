@@ -2,7 +2,7 @@
 
 ![Parvati](logo.png)
 
-Parvati: Indeed, an ORM library, not a framework, written in Rust
+Parvati library: Indeed, an ORM library, not a framework, written in Rust
 
 ## Features
 
@@ -17,8 +17,8 @@ Cargo.toml
 
 ```toml
 [dependencies]
-parvati = {version = "1.0.0", features = ["sqlite"]} # or "mysql"
-parvatiderive = "1.0.0"
+parvati = {version = "1.0.1", features = ["sqlite"]} # or "mysql"
+parvati_derive = "1.0.1"
 ```
 
 ```rust

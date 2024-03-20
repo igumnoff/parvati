@@ -1,3 +1,2 @@
-# parvati_derive
+# Derive for Parvati
 
-Derive for Parvati
